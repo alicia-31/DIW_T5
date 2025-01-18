@@ -22,11 +22,14 @@
 <body>
     <h1>Reproducción de vídeo: DIW_T5</h1>
     <p>Este vídeo está diseñado para ser accesible según las pautas WCAG 2.0 nivel AA.</p>
-    <video controls width="640" height="360" aria-describedby="video-description">
-        <source src="DIW_T5.mp4" type="video/mp4" alt="Un mar en calma al atardecer">
+    <video controls width="640" height="360" aria-describedby="video-description" tabindex="3">
+        <source src="DIW_T5.mp4" type="video/mp4">
         <track src="DIW_T5.html" kind="subtitles" srclang="es" label="Español" default>
         Tu navegador no soporta la reproducción de este vídeo.
     </video>
-    <p>Si necesitas una transcripción del vídeo, por favor <a href="transcripcion.html">haz clic aquí para acceder al documento completo.</a></p>
+    <figcaption id="video-description">
+        Este vídeo muestra el mar en calma al atardecer.
+    </figcaption>
+    <p>Si necesitas una transcripción del vídeo, por favor <a href="transcripcion.html">descarga el archivo de transcripción aquí.</a></p>
 </body>
 </html>
