@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 5</title>
+    <title>Reproductor de Vídeo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.5;
             background-color: #f9f9f9;
-            color: #333;
+            color: #000000;
             padding: 20px;
         }
         video {
@@ -20,10 +20,13 @@
     </style>
 </head>
 <body>
-    <h1>Reproducción del vídeo: DIW_T5</h1>
-    <video controls width="640" height="360">
-        <source src="DIW_T5.mp4" type="video/mp4">
+    <h1>Reproducción de vídeo: DIW_T5</h1>
+    <p>Este vídeo está diseñado para ser accesible según las pautas WCAG 2.0 nivel AA.</p>
+    <video controls width="640" height="360" aria-describedby="video-description">
+        <source src="DIW_T5.mp4" type="video/mp4" alt="Un mar en calma al atardecer">
+        <track src="DIW_T5.html" kind="subtitles" srclang="es" label="Español" default>
         Tu navegador no soporta la reproducción de este vídeo.
     </video>
+    <p>Si necesitas una transcripción del vídeo, por favor <a href="transcripcion.html">haz clic aquí para acceder al documento completo.</a></p>
 </body>
 </html>
